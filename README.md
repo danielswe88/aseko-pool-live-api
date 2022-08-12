@@ -1,2 +1,3 @@
-# aseko-pool-live-api
-Go Client for Aseko Pool Live API
+# Go Client for Aseko Pool Live API
+
+This is just me playing around, I, or this repository has nothing at all to do with Aseko Pool products...
