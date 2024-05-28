@@ -36,12 +36,14 @@ type Chart struct {
 	} `json:"variables"`
 	IsLastest bool `json:"isLastest"`
 	Items     []struct {
-		Timestamp      int64   `json:"timestamp"`
-		PH             float64 `json:"ph"`
-		WaterTemp      float64 `json:"waterTemp"`
-		Redox          int     `json:"rx"`
-		WaterTempNoCal float64 `json:"waterTempNoCal,omitempty"`
-		PhNoCal        float64 `json:"phNoCal,omitempty"`
+		DosingChlor            float64 `json:"cl-value"`
+		DosingPHMinus          float64 `json:"phMinus-value"`
+		PH                     float64 `json:"ph"`
+		PHNotCalibrated        float64 `json:"phNoCal"`
+		Redox                  int     `json:"rx"`
+		Timestamp              int64   `json:"timestamp"`
+		WaterTemp              float64 `json:"waterTemp"`
+		WaterTempNotCalibrated float64 `json:"waterTempNoCal"`
 	} `json:"items"`
 }
 
